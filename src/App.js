@@ -33,8 +33,8 @@ export default function App() {
     <>
       <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
       <SafeAreaView style={styles.container}>
-        <FlatList
-          style={styles.repositoryContainer}
+        <View style={styles.repositoryContainer}>
+        <FlatList        
           data={repositories}
           keyExtractor={repository => repository.id}
           renderItem={({ item: repository }) => (
@@ -65,7 +65,8 @@ export default function App() {
             </>
           )}
         />
-      </SafeAreaView>
+        </View>
+CD..      </SafeAreaView>
     </>
   );
 }
@@ -118,5 +119,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     backgroundColor: "#7159c1",
     padding: 15,
+    marginBottom: 15,
   },
 });
