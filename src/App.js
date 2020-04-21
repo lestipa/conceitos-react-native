@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import api from './services/api';
 
-import Techs from './components/Techs';
-
 import {
   SafeAreaView,
   View,
